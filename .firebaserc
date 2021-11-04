@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "automotriz-723c1"
+  },
+  "targets": {
+    "automotriz-723c1": {
+      "hosting": {
+        "automotriz": [
+          "automotriz-723c1"
+        ]
+      }
+    }
+  }
+}
