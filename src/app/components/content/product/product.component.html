@@ -1,14 +1,13 @@
 <mat-card class="example-card">
   <mat-card-title-group>
-    <mat-card-title>Shiba Inu</mat-card-title>
-    <mat-card-subtitle>Small</mat-card-subtitle>
-    <img mat-card-sm-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" >
+    <mat-card-title>{{ auto.nombre }}</mat-card-title>
+    <mat-card-subtitle>${{ auto.precio }}</mat-card-subtitle>
   </mat-card-title-group>
   <mat-card-content>
-    {{longText}}
+    {{ auto.descripcion }}
   </mat-card-content>
   <mat-card-actions>
-    <button mat-button color="warn">Eliminar</button>
-    <button mat-button>Editar</button>
+    <button mat-button color="warn" (click)="delete(auto.id)">Eliminar</button>
+    <button mat-button (click)="openDialog()">Editar</button>
   </mat-card-actions>
 </mat-card>

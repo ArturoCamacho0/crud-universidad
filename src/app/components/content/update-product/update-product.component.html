@@ -1,0 +1,24 @@
+<h1 mat-dialog-title>Agrega un nuevo autom&oacute;vil</h1>
+
+<div>
+  <mat-form-field appearance="fill" style="width: 100%;">
+    <mat-label>Nombre</mat-label>
+    <input matInput [(ngModel)]="nombre">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" style="width: 100%;">
+    <mat-label>Descripci&oacute;n</mat-label>
+    <input matInput [(ngModel)]="descripcion">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" style="width: 100%;">
+    <mat-label>Precio</mat-label>
+    <input type="number" matInput [(ngModel)]="precio">
+    <span matPrefix>$&nbsp;</span>
+  </mat-form-field>
+
+  <div mat-dialog-actions>
+    <button mat-button color="warn" [mat-dialog-close]="true">Cancelar</button>
+    <button mat-button color="accent" (click)="update()" [mat-dialog-close]="true">Actualizar</button>
+  </div>
+</div>
